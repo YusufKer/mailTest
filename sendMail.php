@@ -12,9 +12,5 @@ if(isset($_POST['send_mail'])){
     $txt =  "You have recieved an email from ".$name.".\n\n".$message;
 
     mail($mail_to, $subject, $txt, $headers);
-    header("Location: index.php?mailsent");
+    header("Location: index.html?mailsent");
 }
-
-
-
-
